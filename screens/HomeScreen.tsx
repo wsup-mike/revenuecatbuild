@@ -7,8 +7,8 @@ const HomeScreen = () => {
         <ScrollView>
       {/* Pro/UpgradeIconButton */}
         <TouchableOpacity className='absolute z-50 top-5 right-10 items-center'>
-            <Ionicons name={'person-circle'} size={24} color='black'/>
-            <Text>PRO</Text>
+            <Ionicons name={'person-circle'} size={24} color='#E5962D'/>
+            <Text className='text-center text-[#E5962D]'>PRO</Text>
         </TouchableOpacity>
 
       {/* Image */}
