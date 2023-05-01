@@ -3,12 +3,13 @@ import { Text, SafeAreaView, Image } from 'react-native'
 const HomeScreen = () => {
   return (
     <SafeAreaView>
-      <Text>This is the HomeScreen</Text>
-
       {/* Pro/UpgradeIconButton */}
 
       {/* Image */}
-      <Image source={{ uri:'https://i.imgur.com/e14NE49.png'}} />
+      <Image 
+        source={{ uri:'https://i.imgur.com/e14NE49.png'}} 
+        className='w-full h-64'
+        />
 
       {/* ActionRow */}
       {/* ActionRow */}
