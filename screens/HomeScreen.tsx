@@ -1,9 +1,15 @@
-import { Text, SafeAreaView, Image } from 'react-native'
+import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native'
+import { Ionicons } from '@expo/vector-icons';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className='flex-1 bg-gray-100 relative'>
+        <ScrollView>
       {/* Pro/UpgradeIconButton */}
+        <TouchableOpacity className='absolute z-50 top-5 right-10 items-center'>
+            <Ionicons name={'person-circle'} />
+            <Text>PRO</Text>
+        </TouchableOpacity>
 
       {/* Image */}
       <Image 
@@ -16,6 +22,7 @@ const HomeScreen = () => {
       {/* ActionRow */}
       {/* ActionRow */}
       {/* ActionRow */}
+      </ScrollView>
     </SafeAreaView>
   )
 }
