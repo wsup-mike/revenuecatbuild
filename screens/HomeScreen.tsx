@@ -1,10 +1,21 @@
-import { View, Text } from 'react-native'
+import { Text, SafeAreaView, Image } from 'react-native'
 
 const HomeScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>This is the HomeScreen</Text>
-    </View>
+
+      {/* Pro/UpgradeIconButton */}
+
+      {/* Image */}
+      <Image source={{ uri:'https://i.imgur.com/e14NE49.png'}} />
+
+      {/* ActionRow */}
+      {/* ActionRow */}
+      {/* ActionRow */}
+      {/* ActionRow */}
+      {/* ActionRow */}
+    </SafeAreaView>
   )
 }
 
