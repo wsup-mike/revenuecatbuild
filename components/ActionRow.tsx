@@ -1,4 +1,5 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
+impor
 
 type Props = {
     title: string;
@@ -18,9 +19,10 @@ const ActionRow = ({
     vertical 
 }: Props) => {
   return (
-    <View>
-      <Text>ActionRow</Text>
-    </View>
+    <TouchableOpacity>
+        <Ionicon />
+        <Text>ActionRow</Text>
+    </TouchableOpacity>
   )
 }
 
