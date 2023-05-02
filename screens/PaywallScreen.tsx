@@ -24,7 +24,7 @@ const PaywallScreen = () => {
                 {/* Access to all pro features */}
                 <View className='flex-row'>
                     <View>
-                        <Ionicons name='md-close-circle-sharp' size={32} color={'#e5962d'}/>
+                        <Ionicons name='md-key' size={32} color={'#e5962d'}/>
                     </View>
                     <View>
                         <Text className='text-white text-xl font-bold'>Access to all pro features</Text>
