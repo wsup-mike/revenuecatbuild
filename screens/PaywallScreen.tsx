@@ -19,15 +19,16 @@ const PaywallScreen = () => {
                 <Ionicons name='md-close-circle-sharp' size={32} color={'#e5962d'}/>
             </TouchableOpacity>
 
-            <Text className='text-white text-2xl font-extrabold mt-10'>UPGRADE</Text>
+            <Text className='text-white text-2xl font-extrabold mt-8'>UPGRADE</Text>
             <Text className='text-white mt-2'>Upgrade to Pro to Access all the Features</Text>
+
             {/* Hero Image */}
             <View className='py-5'>
                 <MaterialCommunityIcons name='trophy-award' size={150} color='#e5962d'/>
             </View>
 
-            {/* Access to all pro features */}
-            <View className='space-y-3 px-14'>
+            <View className='space-y-3 pl-10 pr-14'>
+                {/* Access to all pro features */}
                 <View className='flex-row space-x-7 items-center '>
                     <View>
                         <Ionicons name='md-key' size={32} color={'#e5962d'}/>
@@ -62,14 +63,22 @@ const PaywallScreen = () => {
             </View>
 
             {/* Monthly Subscription */}
-            <TouchableOpacity>
-                <Text></Text>
-                <Text></Text>
-            </TouchableOpacity>
+            <View>
+                <TouchableOpacity>
+                    <View className='bg-[#e5962d] flex py-5 px-16 rounded-full mt-3'>
+                        <Text className='text-white font-bold text-sm'>START A 1 x WEEK FREE TRIAL</Text>
+                        <Text>$22.99/month thereafter</Text>
+                    </View>
+                </TouchableOpacity>
 
-            {/* Annual Subscription */}
-
-
+                {/* Annual Subscription */}
+                <TouchableOpacity>
+                    <View className='bg-[#e5962d] flex py-5 px-16 rounded-full mt-3'>
+                        <Text className='text-white font-bold text-sm'>START A 1 x WEEK FREE TRIAL</Text>
+                        <Text>$22.99/month thereafter</Text>
+                    </View>
+                </TouchableOpacity>
+            </View>
             {/* Restore Purchases */}
             <Text>Restore Purchases</Text>
         </SafeAreaView>
