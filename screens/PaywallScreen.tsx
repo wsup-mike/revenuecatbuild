@@ -22,9 +22,14 @@ const PaywallScreen = () => {
             <Ionicons />
             <View>
                 {/* Access to all pro features */}
-                <View>
-                    <Ionicons />
-                    <View></View>
+                <View className='flex-row'>
+                    <View>
+                        <Ionicons name='md-close-circle-sharp' size={32} color={'#e5962d'}/>
+                    </View>
+                    <View>
+                        <Text className='text-white text-xl font-bold'>Access to all pro features</Text>
+                        <Text className='text-gray-400'>Upgrade to the premium version of the app and enjoy all the exclusive features available only to pro users.</Text>
+                    </View>
                 </View>
 
                 {/* Access to all pro features */}
