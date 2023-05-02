@@ -20,8 +20,12 @@ const ActionRow = ({
 }: Props) => {
   return (
     <TouchableOpacity>
-        <Ionicon />
-        <Text>ActionRow</Text>
+        <Ionicons
+            name={icon}
+            size={30}
+            color="white"
+        />
+        <Text>{title}</Text>
     </TouchableOpacity>
   )
 }
