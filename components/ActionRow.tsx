@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from 'react-native'
-impor
+import { Ionicons } from '@expo/vector-icons'
 
 type Props = {
     title: string;
