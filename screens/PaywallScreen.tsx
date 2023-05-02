@@ -22,12 +22,12 @@ const PaywallScreen = () => {
             <Text className='text-white text-2xl font-extrabold mt-10'>UPGRADE</Text>
             <Text className='text-white mt-2'>Upgrade to Pro to Access all the Features</Text>
             {/* Hero Image */}
-            <View className='py-7'>
+            <View className='py-5'>
                 <MaterialCommunityIcons name='trophy-award' size={150} color='#e5962d'/>
             </View>
 
             {/* Access to all pro features */}
-            <View className='space-y-5 px-14'>
+            <View className='space-y-3 px-14'>
                 <View className='flex-row space-x-7 items-center '>
                     <View>
                         <Ionicons name='md-key' size={32} color={'#e5962d'}/>
