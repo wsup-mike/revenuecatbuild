@@ -14,7 +14,7 @@ const PaywallScreen = () => {
 
     return (
         <SafeAreaView className='flex-1 bg-[#1a2f44] items-center p-6'>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.goBack}>
                 <Ionicons name='md-close-circle-sharp' size={32} color={'#e5962d'}/>
             </TouchableOpacity>
             <Text className='text-white text-2xl font-extrabold'>UPGRADE</Text>
