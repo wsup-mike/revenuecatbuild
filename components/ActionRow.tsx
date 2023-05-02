@@ -27,7 +27,7 @@ const ActionRow = ({
     vertical 
 }: Props) => {
 
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>();
 
   return (
     <TouchableOpacity className={`
