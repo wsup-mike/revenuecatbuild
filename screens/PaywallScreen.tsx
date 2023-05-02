@@ -27,8 +27,8 @@ const PaywallScreen = () => {
             </View>
 
             {/* Access to all pro features */}
-            <View className='space-y-5'>
-                <View className='flex-row space-x-10 items-center '>
+            <View className='space-y-5 px-14'>
+                <View className='flex-row space-x-7 items-center '>
                     <View>
                         <Ionicons name='md-key' size={32} color={'#e5962d'}/>
                     </View>
@@ -39,7 +39,7 @@ const PaywallScreen = () => {
                 </View>
 
                 {/* Helpline 247 */}
-                <View className='flex-row space-x-10 items-center'>
+                <View className='flex-row space-x-7 items-center'>
                     <View>
                         <Ionicons name='md-person-add-outline' size={32} color={'#e5962d'}/>
                     </View>
@@ -50,7 +50,7 @@ const PaywallScreen = () => {
                 </View>
 
                 {/* Unlock unlimited */}
-                <View className='flex-row space-x-10 items-center'>
+                <View className='flex-row space-x-7 items-center'>
                     <View>
                         <Ionicons name='md-star' size={32} color={'#e5962d'}/>
                     </View>
