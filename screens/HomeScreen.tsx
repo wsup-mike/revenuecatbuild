@@ -1,4 +1,4 @@
-import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native'
+import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import ActionRow from '../components/ActionRow';
 
@@ -18,7 +18,8 @@ const HomeScreen = () => {
                 className='w-full h-64'
             />
 
-            {/* ActionRow */}
+            {/* Top ActionRow */}
+            <View>
             <ActionRow 
                 title='Track Workout'
                 screen='Demo'
@@ -33,6 +34,7 @@ const HomeScreen = () => {
                 icon='library'
                 vertical
             />
+            </View>
             <ActionRow 
                 title='Connect with Friends'
                 screen='Demo'
