@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
@@ -23,8 +23,8 @@ const PaywallScreen = () => {
             <Text className='text-white mt-2'>Upgrade to Pro to Access all the Features</Text>
 
             {/* Hero Image */}
-            <View className='py-5'>
-                <MaterialCommunityIcons name='trophy-award' size={150} color='#e5962d'/>
+            <View className='py-2'>
+                <MaterialCommunityIcons name='trophy-award' size={120} color='#e5962d'/>
             </View>
 
             <View className='space-y-3 pl-10 pr-14'>
@@ -65,7 +65,7 @@ const PaywallScreen = () => {
             {/* Monthly Subscription */}
             <View>
                 <TouchableOpacity>
-                    <View className='bg-[#e5962d] flex py-5 px-16 rounded-full mt-3'>
+                    <View className='bg-[#e5962d] flex py-4 px-16 rounded-full mt-3'>
                         <Text className='text-white font-bold text-sm'>START A 1 x WEEK FREE TRIAL</Text>
                         <Text className='text-white text-center font-extralight'>$22.99/month thereafter</Text>
                     </View>
@@ -73,7 +73,7 @@ const PaywallScreen = () => {
 
                 {/* Annual Subscription */}
                 <TouchableOpacity>
-                    <View className='border border-[#e5962d] flex py-5 px-16 rounded-full mt-3'>
+                    <View className='border border-[#e5962d] flex py-4 px-16 rounded-full mt-3'>
                         <Text className='text-white font-bold text-sm text-center'>SAVE 50% ANNUALLY</Text>
                         <Text  className='text-white text-center font-extralight'>$149.99/year</Text>
                     </View>
