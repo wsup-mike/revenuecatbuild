@@ -67,15 +67,15 @@ const PaywallScreen = () => {
                 <TouchableOpacity>
                     <View className='bg-[#e5962d] flex py-5 px-16 rounded-full mt-3'>
                         <Text className='text-white font-bold text-sm'>START A 1 x WEEK FREE TRIAL</Text>
-                        <Text>$22.99/month thereafter</Text>
+                        <Text className='text-white text-center font-extralight'>$22.99/month thereafter</Text>
                     </View>
                 </TouchableOpacity>
 
                 {/* Annual Subscription */}
                 <TouchableOpacity>
-                    <View className='bg-[#e5962d] flex py-5 px-16 rounded-full mt-3'>
-                        <Text className='text-white font-bold text-sm'>START A 1 x WEEK FREE TRIAL</Text>
-                        <Text>$22.99/month thereafter</Text>
+                    <View className='border border-[#e5962d] flex py-5 px-16 rounded-full mt-3'>
+                        <Text className='text-white font-bold text-sm text-center'>SAVE 50% ANNUALLY</Text>
+                        <Text  className='text-white text-center font-extralight'>$149.99/year</Text>
                     </View>
                 </TouchableOpacity>
             </View>
