@@ -1,5 +1,6 @@
 import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
+import ActionRow from '../components/ActionRow';
 
 const HomeScreen = () => {
   return (
@@ -17,11 +18,16 @@ const HomeScreen = () => {
         className='w-full h-64'
         />
 
-      {/* ActionRow */}
-      {/* ActionRow */}
-      {/* ActionRow */}
-      {/* ActionRow */}
-      {/* ActionRow */}
+      {/* ActionRow */}\
+      <ActionRow 
+        title="Track Workout"
+        screen="Demo"
+        color="#E5962D"
+        requiresPro={false}
+        icon="fitness"
+        vertical={false}
+      />
+   
       </ScrollView>
     </SafeAreaView>
   )
