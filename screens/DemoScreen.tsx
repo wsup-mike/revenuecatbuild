@@ -13,7 +13,7 @@ export type NavigationProp = NativeStackNavigationProp<
 const DemoScreen = () => {
   const navigation = useNavigation<NavigationProp>();
   return (
-    <SafeAreaView className='bg-[#e5962d]'>
+    <SafeAreaView className='bg-[#e5962d] flex-1'>
       <TouchableOpacity>
         <Ionicons name='arrow-back' size={50} color='white' />
         <Text>Go back</Text>
