@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
 
 const PaywallScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>PaywallScreen</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 
