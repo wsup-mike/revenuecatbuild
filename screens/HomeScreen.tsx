@@ -19,21 +19,21 @@ const HomeScreen = () => {
             />
 
             {/* Top ActionRow */}
-            <View>
-            <ActionRow 
-                title='Track Workout'
-                screen='Demo'
-                color='#E5962D'
-                icon='fitness'
-                vertical
-            />
-            <ActionRow 
-                title='Browse Workouts'
-                screen='Demo'
-                color='#1982C4'
-                icon='library'
-                vertical
-            />
+            <View className='flex-row'>
+                <ActionRow 
+                    title='Track Workout'
+                    screen='Demo'
+                    color='#E5962D'
+                    icon='fitness'
+                    vertical
+                />
+                <ActionRow 
+                    title='Browse Workouts'
+                    screen='Demo'
+                    color='#1982C4'
+                    icon='library'
+                    vertical
+                />
             </View>
             <ActionRow 
                 title='Connect with Friends'
