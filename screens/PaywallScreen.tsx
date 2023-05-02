@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { NativeStackHeaderProps } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../App'
+import { useNavigation } from '@react-navigation/native'
 
 const PaywallScreen = () => {
   return (
