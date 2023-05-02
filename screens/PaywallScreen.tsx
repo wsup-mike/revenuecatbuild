@@ -18,42 +18,46 @@ const PaywallScreen = () => {
             <TouchableOpacity onPress={navigation.goBack} className='absolute top-0 right-0 p-5'>
                 <Ionicons name='md-close-circle-sharp' size={32} color={'#e5962d'}/>
             </TouchableOpacity>
+
             <Text className='text-white text-2xl font-extrabold mt-10'>UPGRADE</Text>
             <Text className='text-white mt-2'>Upgrade to Pro to Access all the Features</Text>
             {/* Hero Image */}
-            <View>
-                <MaterialCommunityIcons />
+            <View className='py-7'>
+                <MaterialCommunityIcons name='trophy-award' size={150} color='#e5962d'/>
             </View>
+
             {/* Access to all pro features */}
-            <View className='flex-row space-x-10 items-center'>
-                <View>
-                    <Ionicons name='md-key' size={32} color={'#e5962d'}/>
+            <View className='space-y-5'>
+                <View className='flex-row space-x-10 items-center '>
+                    <View>
+                        <Ionicons name='md-key' size={32} color={'#e5962d'}/>
+                    </View>
+                    <View>
+                        <Text className='text-white text-lg font-bold'>Access to all pro features</Text>
+                        <Text className='text-white font-extralight text-sm'>Upgrade to the premium version of the app and enjoy all the exclusive features available only to pro users.</Text>
+                    </View>
                 </View>
-                <View>
-                    <Text className='text-white text-lg font-bold'>Access to all pro features</Text>
-                    <Text className='text-white font-extralight text-sm'>Upgrade to the premium version of the app and enjoy all the exclusive features available only to pro users.</Text>
-                </View>
-            </View>
 
-            {/* Helpline 247 */}
-            <View className='flex-row space-x-10 items-center'>
-                <View>
-                    <Ionicons name='md-person-add-outline' size={32} color={'#e5962d'}/>
+                {/* Helpline 247 */}
+                <View className='flex-row space-x-10 items-center'>
+                    <View>
+                        <Ionicons name='md-person-add-outline' size={32} color={'#e5962d'}/>
+                    </View>
+                    <View>
+                        <Text className='text-white text-lg font-bold'>Helpline 24/7 to Personal Trainers</Text>
+                        <Text className='text-white font-extralight text-sm'>Get unlimited access to our fitness support team and get help anytime you need it - day or night.</Text>
+                    </View>
                 </View>
-                <View>
-                    <Text className='text-white text-lg font-bold'>Helpline 24/7 to Personal Trainers</Text>
-                    <Text className='text-white font-extralight text-sm'>Get unlimited access to our fitness support team and get help anytime you need it - day or night.</Text>
-                </View>
-            </View>
 
-            {/* Unlock unlimited */}
-            <View className='flex-row space-x-10 items-center'>
-                <View>
-                    <Ionicons name='md-star' size={32} color={'#e5962d'}/>
-                </View>
-                <View>
-                    <Text className='text-white text-lg font-bold'>Unlock Limited Edition Content</Text>
-                    <Text className='text-white font-extralight text-sm'>Unlock exclusive content that you can get anywhere else like special exclusive workouts and routines.</Text>
+                {/* Unlock unlimited */}
+                <View className='flex-row space-x-10 items-center'>
+                    <View>
+                        <Ionicons name='md-star' size={32} color={'#e5962d'}/>
+                    </View>
+                    <View>
+                        <Text className='text-white text-lg font-bold'>Unlock Limited Edition Content</Text>
+                        <Text className='text-white font-extralight text-sm'>Unlock exclusive content that you can get anywhere else like special exclusive workouts and routines.</Text>
+                    </View>
                 </View>
             </View>
             <TouchableOpacity>
