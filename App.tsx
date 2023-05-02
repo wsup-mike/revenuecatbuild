@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import DemoScreen from './screens/DemoScreen';
+import PaywallScreen from './screens/PaywallScreen';
+ 
 
 export type RootStackParamList = {
   Home: undefined;
