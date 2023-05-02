@@ -60,10 +60,14 @@ const PaywallScreen = () => {
                     </View>
                 </View>
             </View>
+
+            {/* Monthly Subscription */}
             <TouchableOpacity>
                 <Text></Text>
                 <Text></Text>
             </TouchableOpacity>
+
+            {/* Annual Subscription */}
             <Text>Restore Purchases</Text>
         </SafeAreaView>
     )
