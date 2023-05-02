@@ -19,50 +19,51 @@ const HomeScreen = () => {
             />
 
             {/* Top ActionRow */}
-            <View className='flex-row'>
+            <View >
+                <View className='flex-row justify-between space-x-2'>
+                    <ActionRow 
+                        title='Track Workout'
+                        screen='Demo'
+                        color='#E5962D'
+                        icon='fitness'
+                        vertical
+                    />
+                    <ActionRow 
+                        title='Browse Workouts'
+                        screen='Demo'
+                        color='#1982C4'
+                        icon='library'
+                        vertical
+                    />
+                </View>
                 <ActionRow 
-                    title='Track Workout'
+                    title='Connect with Friends'
                     screen='Demo'
-                    color='#E5962D'
-                    icon='fitness'
-                    vertical
+                    color='#F44174'
+                    icon='share-social'
                 />
                 <ActionRow 
-                    title='Browse Workouts'
+                    title='Add an Exercise'
                     screen='Demo'
-                    color='#1982C4'
-                    icon='library'
-                    vertical
+                    color='#8AC926'
+                    icon='add-circle'
+                    requiresPro
+                />
+                <ActionRow 
+                    title='Create a Routine'
+                    screen='Demo'
+                    color='#C03221'
+                    icon='md-time'
+                    requiresPro
+                />
+                <ActionRow 
+                    title='Join Challenge'
+                    screen='Demo'
+                    color='#23967F'
+                    icon='trophy'
+                    requiresPro
                 />
             </View>
-            <ActionRow 
-                title='Connect with Friends'
-                screen='Demo'
-                color='#F44174'
-                icon='share-social'
-            />
-            <ActionRow 
-                title='Add an Exercise'
-                screen='Demo'
-                color='#8AC926'
-                icon='add-circle'
-                requiresPro
-            />
-            <ActionRow 
-                title='Create a Routine'
-                screen='Demo'
-                color='#C03221'
-                icon='md-time'
-                requiresPro
-            />
-            <ActionRow 
-                title='Join Challenge'
-                screen='Demo'
-                color='#23967F'
-                icon='trophy'
-                requiresPro
-            />
-   
       </ScrollView>
     </SafeAreaView>
   )
