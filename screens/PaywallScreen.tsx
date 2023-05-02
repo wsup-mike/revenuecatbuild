@@ -68,6 +68,9 @@ const PaywallScreen = () => {
             </TouchableOpacity>
 
             {/* Annual Subscription */}
+
+
+            {/* Restore Purchases */}
             <Text>Restore Purchases</Text>
         </SafeAreaView>
     )
