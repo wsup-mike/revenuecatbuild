@@ -20,9 +20,18 @@ const HomeScreen = () => {
 
             {/* ActionRow */}
             <ActionRow 
-                title='none'
-                screen='none'
-                color='none'
+                title='Track Workout'
+                screen='Demo'
+                color='#E5962D'
+                icon='fitness'
+                vertical
+            />
+            <ActionRow 
+                title='Browse Workouts'
+                screen='Demo'
+                color='#1982C4'
+                icon='library'
+                vertical
             />
    
       </ScrollView>

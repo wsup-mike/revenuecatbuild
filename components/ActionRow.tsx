@@ -19,7 +19,7 @@ const ActionRow = ({
     vertical 
 }: Props) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity className='' style={{ backgroundColor: color }}>
         <Ionicons
             name={icon}
             size={30}
