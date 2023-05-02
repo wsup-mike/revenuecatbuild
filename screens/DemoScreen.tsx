@@ -10,7 +10,7 @@ export type NavigationProp = NativeStackNavigationProp<
 >;
 
 const DemoScreen = () => {
-  
+  const navigation = useNavigation<NavigationProp>();
   return (
     <SafeAreaView>
       <Text>DemoScreen</Text>
