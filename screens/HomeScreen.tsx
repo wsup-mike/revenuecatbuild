@@ -15,11 +15,11 @@ const HomeScreen = () => {
             {/* Image */}
             <Image 
                 source={{ uri:'https://i.imgur.com/e14NE49.png'}} 
-                className='w-full h-64'
+                className='w-full h-48'
             />
 
             {/* Top ActionRow */}
-            <View >
+            <View className='mx-5 '>
                 <View className='flex-row justify-between space-x-2'>
                     <ActionRow 
                         title='Track Workout'

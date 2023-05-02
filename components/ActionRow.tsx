@@ -20,7 +20,7 @@ const ActionRow = ({
 }: Props) => {
   return (
     <TouchableOpacity className={`
-        flex flex-1 justify-center items-center py-6 rounded-lg space-x-2 ${ vertical ? 'flex-col' : 'flex-row'}
+        flex flex-1 m-2 justify-center items-center py-6 rounded-lg space-x-2 ${ vertical ? 'flex-col' : 'flex-row'}
      `} style={{ backgroundColor: color }}>
         <Ionicons
             name={icon}
