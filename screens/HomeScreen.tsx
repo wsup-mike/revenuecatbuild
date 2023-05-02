@@ -1,13 +1,19 @@
 import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import ActionRow from '../components/ActionRow';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../App';
+
+export type NavigationProp = NativeStackNavigationProp<
+    
+>;
 
 const HomeScreen = () => {
   return (
     <SafeAreaView className='flex-1 bg-gray-100 relative'>
         <ScrollView>
             {/* Pro/UpgradeIconButton */}
-            <TouchableOpacity className='absolute z-50 top-5 right-10 items-center'>
+            <TouchableOpacity className='absolute z-50 top-5 right-10 items-center' onPress={navigation.navigate}>
                 <Ionicons name={'person-circle'} size={24} color='#E5962D'/>
                 <Text className='text-center text-[#E5962D]'>PRO</Text>
             </TouchableOpacity>
