@@ -9,8 +9,14 @@ type Props = {
     vertical?: boolean;
 }
 
-
-const ActionRow = ({ title, screen, color, icon, vertical }: Props) => {
+const ActionRow = ({ 
+    title, 
+    screen, 
+    color, 
+    requiresPro, 
+    icon, 
+    vertical 
+}: Props) => {
   return (
     <View>
       <Text>ActionRow</Text>
@@ -18,4 +24,4 @@ const ActionRow = ({ title, screen, color, icon, vertical }: Props) => {
   )
 }
 
-export default ActionRow
+export default ActionRow;
