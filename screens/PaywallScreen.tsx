@@ -3,10 +3,12 @@ import { Ionicons } from '@expo/vector-icons'
 
 const PaywallScreen = () => {
   return (
-    <SafeAreaView className='flex-1 bg-cyan-950 items-center p-6'>
-        <Ionicons />
-        <Text>UPGRADE</Text>
-        <Text></Text>
+    <SafeAreaView className='flex-1 bg-[#1a2f44] items-center p-6'>
+        <TouchableOpacity>
+            <Ionicons name='md-close-circle-sharp' size={32} color={'#e5962d'}/>
+        </TouchableOpacity>
+        <Text className='text-white text-2xl font-extrabold'>UPGRADE</Text>
+        <Text className='text-white mt-2'>Upgrade to Pro to Access all the Features</Text>
         <Ionicons />
         <View>
             {/* Access to all pro features */}
