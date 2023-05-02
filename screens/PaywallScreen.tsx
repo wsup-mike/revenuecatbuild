@@ -22,19 +22,37 @@ const PaywallScreen = () => {
             <Ionicons />
             <View>
                 {/* Access to all pro features */}
-                <View className='flex-row'>
+                <View className='flex-row space-x-10 items-center'>
                     <View>
                         <Ionicons name='md-key' size={32} color={'#e5962d'}/>
                     </View>
                     <View>
-                        <Text className='text-white text-xl font-bold'>Access to all pro features</Text>
-                        <Text className='text-gray-400'>Upgrade to the premium version of the app and enjoy all the exclusive features available only to pro users.</Text>
+                        <Text className='text-white text-lg font-bold'>Access to all pro features</Text>
+                        <Text className='text-white font-extralight text-sm'>Upgrade to the premium version of the app and enjoy all the exclusive features available only to pro users.</Text>
                     </View>
                 </View>
 
                 {/* Access to all pro features */}
+                <View className='flex-row space-x-10 items-center'>
+                    <View>
+                        <Ionicons name='md-person-add-outline' size={32} color={'#e5962d'}/>
+                    </View>
+                    <View>
+                        <Text className='text-white text-lg font-bold'>Helpline 24/7 to Personal Trainers</Text>
+                        <Text className='text-white font-extralight text-sm'>Get unlimited access to our fitness support team and get help anytime you need it - day or night.</Text>
+                    </View>
+                </View>
 
                 {/* Access to all pro features */}
+                <View className='flex-row space-x-10 items-center'>
+                    <View>
+                        <Ionicons name='md-key' size={32} color={'#e5962d'}/>
+                    </View>
+                    <View>
+                        <Text className='text-white text-lg font-bold'>Access to all pro features</Text>
+                        <Text className='text-white font-extralight text-sm'>Upgrade to the premium version of the app and enjoy all the exclusive features available only to pro users.</Text>
+                    </View>
+                </View>
                 <TouchableOpacity>
                     <Text></Text>
                     <Text></Text>
