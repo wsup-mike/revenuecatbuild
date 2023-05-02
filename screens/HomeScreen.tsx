@@ -33,6 +33,12 @@ const HomeScreen = () => {
                 icon='library'
                 vertical
             />
+            <ActionRow 
+                title='Connect with Friends'
+                screen='Demo'
+                color='#F44174'
+                icon='share-social'
+            />
    
       </ScrollView>
     </SafeAreaView>
