@@ -80,7 +80,9 @@ const PaywallScreen = () => {
                 </TouchableOpacity>
             </View>
             {/* Restore Purchases */}
-            <Text>Restore Purchases</Text>
+            <TouchableOpacity>
+                <Text className='mt-5 font-light text-[#e5962d]'>Restore Purchases</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     )
 }
