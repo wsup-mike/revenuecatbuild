@@ -1,5 +1,8 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
+import { useNavigation } from '@react-navigation/native';
+import { RootStackParamList } from '../App';
+
 
 type Props = {
     title: string;
@@ -18,10 +21,13 @@ const ActionRow = ({
     icon, 
     vertical 
 }: Props) => {
+
+  const navigation = useNavigation();
+
   return (
     <TouchableOpacity className={`
         flex flex-1 m-2 justify-center items-center py-6 rounded-lg space-x-2 ${ vertical ? 'flex-col' : 'flex-row'}
-     `} style={{ backgroundColor: color }}>
+     `} style={{ backgroundColor: color }} >
         <Ionicons
             name={icon}
             size={30}
