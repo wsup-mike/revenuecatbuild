@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
-import { NativeStackHeaderProps, NativeStackNavigationProp } from '@react-navigation/native-stack'
+import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../App'
 import { useNavigation } from '@react-navigation/native'
 
@@ -14,7 +14,7 @@ const PaywallScreen = () => {
 
     return (
         <SafeAreaView className='flex-1 bg-[#1a2f44] items-center p-6'>
-            <TouchableOpacity onPress={() => navigation.goBack}>
+            <TouchableOpacity onPress={navigation.goBack}>
                 <Ionicons name='md-close-circle-sharp' size={32} color={'#e5962d'}/>
             </TouchableOpacity>
             <Text className='text-white text-2xl font-extrabold'>UPGRADE</Text>
