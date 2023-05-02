@@ -14,7 +14,7 @@ const DemoScreen = () => {
   const navigation = useNavigation<NavigationProp>();
   return (
     <SafeAreaView className='bg-[#e5962d] flex-1'>
-      <TouchableOpacity className='flex-row items-center p-5'>
+      <TouchableOpacity className='flex-row items-center p-5' onPress={navigation.goBack}>
         <Ionicons name='arrow-back' size={50} color='white' />
         <Text className='text-white'>Go back</Text>
       </TouchableOpacity>
