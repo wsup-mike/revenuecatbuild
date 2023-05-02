@@ -44,6 +44,21 @@ const HomeScreen = () => {
                 screen='Demo'
                 color='#8AC926'
                 icon='add-circle'
+                requiresPro
+            />
+            <ActionRow 
+                title='Create a Routine'
+                screen='Demo'
+                color='#C03221'
+                icon='md-time'
+                requiresPro
+            />
+            <ActionRow 
+                title='Join Challenge'
+                screen='Demo'
+                color='#23967F'
+                icon='trophy'
+                requiresPro
             />
    
       </ScrollView>
