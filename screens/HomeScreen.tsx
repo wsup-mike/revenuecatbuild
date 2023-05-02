@@ -3,6 +3,7 @@ import { Ionicons } from '@expo/vector-icons';
 import ActionRow from '../components/ActionRow';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../App';
+import { useNavigation } from '@react-navigation/native';
 
 export type NavigationProp = NativeStackNavigationProp<
     RootStackParamList,
