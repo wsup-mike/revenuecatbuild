@@ -32,7 +32,7 @@ const ActionRow = ({
   return (
     <TouchableOpacity className={`
         flex flex-1 m-2 justify-center items-center py-6 rounded-lg space-x-2 ${ vertical ? 'flex-col' : 'flex-row'}
-     `} style={{ backgroundColor: color }} >
+     `} style={{ backgroundColor: color }} onPress={() => navigation.navigate(screen)}>
         <Ionicons
             name={icon}
             size={30}
