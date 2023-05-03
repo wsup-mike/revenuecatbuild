@@ -73,7 +73,7 @@ const PaywallScreen = () => {
 
                 {/* Annual Subscription */}
                 <TouchableOpacity>
-                    <View className='border border-[#e5962d] flex py-4 px-16 rounded-full mt-3'>
+                    <View className='border-[#e5962d] border-2 flex py-4 px-16 rounded-full mt-3'>
                         <Text className='text-white font-bold text-sm text-center'>SAVE 50% ANNUALLY</Text>
                         <Text  className='text-white text-center font-extralight'>$149.99/year</Text>
                     </View>
