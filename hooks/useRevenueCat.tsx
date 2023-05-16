@@ -11,7 +11,7 @@ const apiKeys = { // Normally we should put this in a .env file!
 }
 
 function useRevenueCat() {
-    
+    const [currentOffering, setCurrentOffering] = useState<PurchasesOffering | null>(null);
 }
 
 export default useRevenueCat;
