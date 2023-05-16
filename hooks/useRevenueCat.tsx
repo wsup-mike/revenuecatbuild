@@ -18,6 +18,10 @@ const typesOfMembership = {
 function useRevenueCat() {
     const [currentOffering, setCurrentOffering] = useState<PurchasesOffering | null>(null);
     const [customerInfo, setCustomerInfo] = useState<CustomerInfo | null>(null);
+    const isProMember = 
+        customerInfo?.activeSubscriptions.includes(typesOfMembership.monthly) || 
+        customerInfo?.activeSubscriptions.includes(typesOfMembership.yearly);
+        
 }
 
 export default useRevenueCat;
