@@ -10,6 +10,11 @@ const apiKeys = { // Normally we should put this in a .env file!
     google: '', // The RevenueCat API key for Androids
 }
 
+const typesOfMembership = {
+    monthly: "pro",
+    yearly: "proAnnual",
+}
+
 function useRevenueCat() {
     const [currentOffering, setCurrentOffering] = useState<PurchasesOffering | null>(null);
     const [customerInfo, setCustomerInfo] = useState<CustomerInfo | null>(null);
