@@ -8,7 +8,7 @@ import { PurchasesOffering } from "react-native-purchases/dist/offerings";
 
 const apiKeys = { // Normally we should put this in a .env file!
     apple: 'appl_WlRlUBLoWljLTsqoPspfNfEYkwj', // The RevenueCat API key for iOS build
-    google: '', // The RevenueCat API key for Androids
+    google: 'your_revenuecat_google_api_key'
 }
 
 const typesOfMembership = {
@@ -27,9 +27,7 @@ function useRevenueCat() {
         const fetchData = async () => {
             // Purchases.setDebugLogsEnabled(true) // first to enable the debug logs for our purchases // looks like this is deprecated
             // Now to detect user's OS platform
-            if (Platform.OS === 'android') {
-                await Purchases.configure({ apiKey: apiKeys.google});
-            } else {
+            if (Platform.OS === 'ios') {
                 await Purchases.configure({ apiKey: apiKeys.apple });
             }
 
