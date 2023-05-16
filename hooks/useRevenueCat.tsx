@@ -1,5 +1,5 @@
 // Creating a custom hook: To track 3 things: current offerings, customer info, is user pro member
-
+import { useState } from "react";
 import { Platform } from "react-native"; // to detect the type of OS user is on
 import Purchases from "react-native-purchases/dist/purchases"; // to import from react native purchases
 import { CustomerInfo } from "react-native-purchases/dist/customerInfo";
