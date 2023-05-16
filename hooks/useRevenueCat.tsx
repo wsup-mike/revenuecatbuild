@@ -1,4 +1,5 @@
 // Creating a custom hook: To track 3 things: current offerings, customer info, is user pro member
+// This custom hook can be used anywhere in our app and when we run it it can tell us: if user is pro member, all the revenuecat offerings, or give customers current info.
 import { useState, useEffect } from "react";
 import { Platform } from "react-native"; // to detect the type of OS user is on
 import Purchases from "react-native-purchases/dist/purchases"; // to import from react native purchases
@@ -50,7 +51,7 @@ function useRevenueCat() {
         
     }, []);
 
-    // This will now creaet a listener! If a user subscribes to a PRO membership,
+    // This will now creaet a listener! If a user subscribes to a PRO membership at RevenueCatSDK, then this customer info will be set to customerInfo state. Now the component can respond to changes in customer info we get from RevenueCat
     useEffect(() => {
         const customerInfoUpdated = async (purchaserInfo:CustomerInfo) => {
             setCustomerInfo(purchaserInfo)
@@ -59,7 +60,8 @@ function useRevenueCat() {
         Purchases.addCustomerInfoUpdateListener(customerInfoUpdated);
     }, [])
 
-    
+    // Now the following return will expose access to these 3 values that can now be used anywhere in the code! Includes the state values and the computed values. any of our components have access to these values!
+    return { currentOffering, customerInfo, isProMember }
 }
 
 export default useRevenueCat;
