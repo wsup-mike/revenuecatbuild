@@ -29,6 +29,8 @@ function useRevenueCat() {
             // Now to detect user's OS platform
             if (Platform.OS === 'ios') {
                 await Purchases.configure({ apiKey: apiKeys.apple });
+            } else {
+                await Purchases.configure({ apiKey: apiKeys.google });
             }
 
             // Next to retrieve all available 'offerings' (The 2 offerings we created:The PRO offering with packages of monthly and annual)
