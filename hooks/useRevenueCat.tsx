@@ -12,8 +12,8 @@ const apiKeys = { // Normally we should put this in a .env file!
 }
 
 const typesOfMembership = {
-    monthly: "pro",
-    yearly: "proAnnual",
+    monthly: "pro", // From App Store Connect 'Product ID'
+    yearly: "proAnnual", // From App Store Connect 'Product ID'
 }
 
 function useRevenueCat() {
