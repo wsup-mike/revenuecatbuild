@@ -45,7 +45,7 @@ function useRevenueCat() {
 
             //Next to set the customerInfo state with returned 'customerInfo'
             setCustomerInfo(customerInfo);
-        }
+        };
 
         // Now to actually call fetchData above with some error handling
         fetchData().catch(console.error);
@@ -54,7 +54,7 @@ function useRevenueCat() {
 
     // This will now creaet a listener! If a user subscribes to a PRO membership at RevenueCatSDK, then this customer info will be set to customerInfo state. Now the component can respond to changes in customer info we get from RevenueCat
     useEffect(() => {
-        const customerInfoUpdated = async (purchaserInfo:CustomerInfo) => {
+        const customerInfoUpdated = async (purchaserInfo: CustomerInfo) => {
             setCustomerInfo(purchaserInfo)
         }
 
