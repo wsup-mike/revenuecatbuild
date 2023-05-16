@@ -35,6 +35,8 @@ function useRevenueCat() {
             // Next to retrieve all available 'offerings' (The 2 offerings we created:The PRO offering with packages of monthly and annual)
             const offerings = await Purchases.getOfferings();
 
+            console.log(`The offerings object is: ${offerings}`)
+
             // Next to get 'customer info'
             const customerInfo = await Purchases.getCustomerInfo();
 
