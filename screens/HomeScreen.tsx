@@ -4,6 +4,7 @@ import ActionRow from '../components/ActionRow';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../App';
 import { useNavigation } from '@react-navigation/native';
+import useRevenueCat from '../hooks/useRevenueCat';
 
 export type NavigationProp = NativeStackNavigationProp<
     RootStackParamList,
@@ -13,6 +14,7 @@ export type NavigationProp = NativeStackNavigationProp<
 const HomeScreen = () => {
 
     const navigation = useNavigation<NavigationProp>();
+    const { currentOffering, customerInfo, isProMember } = useRevenueCat();
 
     return (
         <SafeAreaView className='flex-1 bg-gray-100 relative'>
