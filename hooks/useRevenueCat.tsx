@@ -25,7 +25,6 @@ function useRevenueCat() {
 
     useEffect(() => {
         const fetchData = async () => {
-            // Purchases.setDebugLogsEnabled(true) // first to enable the debug logs for our purchases // looks like this is deprecated
             // Now to detect user's OS platform
             if (Platform.OS === 'ios') {
                 await Purchases.configure({ apiKey: apiKeys.apple });
