@@ -50,6 +50,15 @@ function useRevenueCat() {
         
     }, []);
 
+    // This will now creaet a listener! If a user subscribes to a PRO membership,
+    useEffect(() => {
+        const customerInfoUpdated = async (purchaserInfo:CustomerInfo) => {
+            setCustomerInfo(purchaserInfo)
+        }
+
+        Purchases.addCustomerInfoUpdateListener(customerInfoUpdated);
+    }, [])
+
     
 }
 
