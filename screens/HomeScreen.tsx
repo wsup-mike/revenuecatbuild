@@ -15,7 +15,7 @@ const HomeScreen = () => {
 
     const navigation = useNavigation<NavigationProp>();
     const { currentOffering, customerInfo, isProMember } = useRevenueCat();
-    console.log(currentOffering);
+    console.log('DEBUG', currentOffering);
 
     return (
         <SafeAreaView className='flex-1 bg-gray-100 relative'>
