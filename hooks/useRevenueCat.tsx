@@ -8,12 +8,12 @@ import { PurchasesOffering } from "react-native-purchases/dist/offerings";
 
 const apiKeys = { // Normally we should put this in a .env file!
     apple: 'appl_WlRlUBLoWljLTsqoPspfNfEYkwj', // The RevenueCat API key for iOS build
-    google: 'your_revenuecat_google_api_key'
+    google: 'your_revenuecat_google_api_key',
 }
 
 const typesOfMembership = {
-    monthly: "pro", // From App Store Connect 'Product ID'
-    yearly: "proAnnual", // From App Store Connect 'Product ID'
+    monthly: "proMonthly", // From App Store Connect 'Product ID'
+    yearly: "proYearly", // From App Store Connect 'Product ID'
 }
 
 function useRevenueCat() {
