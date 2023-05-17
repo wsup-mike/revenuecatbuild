@@ -6,6 +6,7 @@ import { Platform } from "react-native"; // to detect the type of OS user is on
 import Purchases from 'react-native-purchases';
 import { CustomerInfo } from "react-native-purchases/dist/customerInfo";
 import { PurchasesOffering } from "react-native-purchases";
+import { LOG_LEVEL } from 'react-native-purchases'
 
 const apiKeys = { // Normally we should put this in a .env file!
     apple: 'appl_WlRlUBLoWljLTsqoPspfNfEYkwj', // The RevenueCat API key for iOS build
@@ -26,8 +27,11 @@ function useRevenueCat() {
 
     useEffect(() => {
         const fetchData = async () => {
-            // Now to detect user's OS platform
-            if (Platform.OS === 'ios') {
+            // Enables debug logs for the Purchases module! Now can see addl info during development!
+            Purchases.setLogLevel(LOG_LEVEL.DEBUG); // Set log level to DEBUG for enhanced logging
+
+            // This configures 'Purchases' once! We initialize n configure the SDK here.Now to detect user's OS platform
+            if (Platform.OS === 'ios') { // 
                 await Purchases.configure({apiKey: apiKeys.apple });
             } else {
                 await Purchases.configure({ apiKey: apiKeys.google });
