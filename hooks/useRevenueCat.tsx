@@ -28,7 +28,7 @@ function useRevenueCat() {
         const fetchData = async () => {
             // Now to detect user's OS platform
             if (Platform.OS === 'ios') {
-                await Purchases.configure({ apiKey: apiKeys.apple });
+                await Purchases.configure({apiKey: apiKeys.apple });
             } else {
                 await Purchases.configure({ apiKey: apiKeys.google });
             }
