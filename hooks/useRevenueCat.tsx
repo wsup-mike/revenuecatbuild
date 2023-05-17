@@ -29,7 +29,7 @@ function useRevenueCat() {
         const fetchData = async () => {
             // Enables debug logs for the Purchases module! Now can see addl info during development!
             Purchases.setLogLevel(LOG_LEVEL.DEBUG); // Set log level to DEBUG for enhanced logging
-
+            
             // This configures 'Purchases' once! We initialize n configure the SDK here.Now to detect user's OS platform
             if (Platform.OS === 'ios') { // 
                 await Purchases.configure({apiKey: apiKeys.apple });
