@@ -2,7 +2,8 @@
 // This custom hook can be used anywhere in our app and when we run it it can tell us: if user is pro member, all the revenuecat offerings, or give customers current info.
 import { useState, useEffect } from "react";
 import { Platform } from "react-native"; // to detect the type of OS user is on
-import Purchases from "react-native-purchases/dist/purchases"; // to import from react native purchases
+// import Purchases from "react-native-purchases/dist/purchases"; // to import from react native purchases
+import Purchases from 'react-native-purchases';
 import { CustomerInfo } from "react-native-purchases/dist/customerInfo";
 import { PurchasesOffering } from "react-native-purchases";
 
