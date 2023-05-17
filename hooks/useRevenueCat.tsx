@@ -6,7 +6,7 @@ import { Platform } from "react-native"; // to detect the type of OS user is on
 import Purchases from 'react-native-purchases';
 import { CustomerInfo } from "react-native-purchases/dist/customerInfo";
 import { PurchasesOffering } from "react-native-purchases";
-import { LOG_LEVEL } from 'react-native-purchases'
+import { LOG_LEVEL } from 'react-native-purchases' // to access 'DEBUG'
 
 const apiKeys = { // Normally we should put this in a .env file!
     apple: 'appl_WlRlUBLoWljLTsqoPspfNfEYkwj', // The RevenueCat API key for iOS build
