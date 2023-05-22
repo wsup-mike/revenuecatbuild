@@ -18,6 +18,8 @@ const HomeScreen = () => {
     
     const { currentOffering, isProMember, customerInfo } = useRevenueCat();
 
+    console.log(`The current offering object is ${currentOffering}`)
+
     return (
         <SafeAreaView className='flex-1 bg-gray-100 relative'>
             <ScrollView>
