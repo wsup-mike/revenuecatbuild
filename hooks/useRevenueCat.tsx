@@ -32,7 +32,7 @@ function useRevenueCat() {
             
             // This configures 'Purchases' once! We initialize n configure the SDK here.Now to detect user's OS platform
             if (Platform.OS === 'ios') { // 
-                await Purchases.configure({apiKey: apiKeys.apple });
+                await Purchases.configure({ apiKey: apiKeys.apple })
             } else {
                 await Purchases.configure({ apiKey: apiKeys.google });
             }
